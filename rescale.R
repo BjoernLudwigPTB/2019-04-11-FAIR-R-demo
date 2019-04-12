@@ -17,6 +17,6 @@
 rescale <- function(v, ..., low = 0, high = 1) {
   L <- min(v)
   H <- max(v)
-  result <- ((v - L) / (H - L)) * (high - low) + low
+  result <- (v - L) / (H - L) * (high - low) + low
   return(result)
 }
